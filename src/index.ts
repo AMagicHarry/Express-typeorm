@@ -7,6 +7,7 @@ import gaugesRoutes from './routes/gauge.route';
 import commentsRoutes from './routes/comment.route';
 import entitiesRoutes from './routes/entity.route'
 import categoriesRoutes from './routes/category.route'
+import usersRoutes from './routes/user.route'
 import errorMiddleware from './middleware/errorMiddleware';
 import { authMiddleware } from './middleware/authMiddleware';
 
@@ -19,10 +20,12 @@ app.use(express.json());
 
 // Routes
 app.use('/api', authRoutes);
+app.use("/public", express.static("public"));
 app.use('/api/gauges', authMiddleware, gaugesRoutes);
 app.use('/api/comments', authMiddleware, commentsRoutes);
 app.use('/api/entities', authMiddleware, entitiesRoutes);
 app.use('/api/categories', authMiddleware, categoriesRoutes);
+app.use('/api/users', authMiddleware, usersRoutes);
 
 // Error Handling Middleware
 app.use(errorMiddleware);

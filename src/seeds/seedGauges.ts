@@ -12,7 +12,12 @@ export const seedGauges = async () => {
       name: 'Air travel 700-2500 km',
       description: 'Medium-haul flights average (km)',
       unit: 'km',
-      scope: 172,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 172,
+      energy: 2.8,
+      money: 0.35,
       categories: [
         {
           name: 'Air traffic business travel'
@@ -23,7 +28,12 @@ export const seedGauges = async () => {
       name: 'Air travel more than 2500 km',
       description: 'Flights long haul average (km)',
       unit: 'km',
-      scope: 157,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 157,
+      energy: 1.9,
+      money: 0.3,
       categories: [
         {
           name: 'Air traffic business travel'
@@ -34,7 +44,12 @@ export const seedGauges = async () => {
       name: 'Flights up to 700 km',
       description: 'Flights short haul average (km)',
       unit: 'km',
-      scope: 234,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 234,
+      energy: 3.8,
+      money: 0.4,
       categories: [
         {
           name: 'Air traffic business travel'
@@ -46,7 +61,12 @@ export const seedGauges = async () => {
       name: 'Surface buildings',
       description: 'Total area (m²)',
       unit: 'm²',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Buildings'
@@ -58,7 +78,12 @@ export const seedGauges = async () => {
       name: 'Distance cars: unknown fuel type',
       description: 'Fuel unknown (km)',
       unit: 'km',
-      scope: 193,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 193,
+      energy: 2.9,
+      money: 0.248,
       categories: [
         {
           name: 'Commuting'
@@ -70,7 +95,12 @@ export const seedGauges = async () => {
       name: 'Company cars',
       description: 'Vehicles (number)',
       unit: 'km',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Company cars'
@@ -78,10 +108,15 @@ export const seedGauges = async () => {
       ]
     },
     {
-      name: 'scope: 0,',
+      name: 'Diesel consumption',
       description: 'Diesel (liter)',
       unit: 'liter',
-      scope: 2468,
+      scope1: 2468,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 787,
+      energy: 36,
+      money: 1.79,
       categories: [
         {
           name: 'Company cars'
@@ -92,7 +127,12 @@ export const seedGauges = async () => {
       name: 'Distance travelled company cars',
       description: 'Distance (km)',
       unit: 'km',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Company cars'
@@ -103,7 +143,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage green',
       description: 'Green NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 16,
+      money: 0.214,
       categories: [
         {
           name: 'Company cars'
@@ -114,7 +159,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage grey',
       description: 'Grey NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 448,
+      scope3: 88,
+      energy: 3.6,
+      money: 0.214,
       categories: [
         {
           name: 'Company cars'
@@ -125,7 +175,12 @@ export const seedGauges = async () => {
       name: 'Gasoline consumption',
       description: 'Petrol (liter)',
       unit: 'liter',
-      scope: 2176,
+      scope1: 2176,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 645,
+      energy: 31.4,
+      money: 1.91,
       categories: [
         {
           name: 'Company cars'
@@ -136,7 +191,12 @@ export const seedGauges = async () => {
       name: 'LPG consumption',
       description: 'LPG (liter)',
       unit: 'liter',
-      scope: 1635,
+      scope1: 1635,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Company cars'
@@ -148,7 +208,12 @@ export const seedGauges = async () => {
       name: 'Consumption of self-generated non-fuel renewable energy',
       description: 'Self-generated and -consumed electricity (kWh)',
       unit: 'kWh',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 1,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Electricity'
@@ -159,7 +224,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage green',
       description: 'Green NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 16,
+      money: 0.214,
       categories: [
         {
           name: 'Electricity'
@@ -170,7 +240,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage grey',
       description: 'Grey NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 448,
+      scope3: 88,
+      energy: 3.6,
+      money: 0.214,
       categories: [
         {
           name: 'Electricity'
@@ -182,7 +257,12 @@ export const seedGauges = async () => {
       name: 'Diesel consumption',
       description: 'Diesel (liter)',
       unit: 'liter',
-      scope: 2458,
+      scope1: 2468,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 787,
+      energy: 3.6,
+      money: 1.79,
       categories: [
         {
           name: 'Equipment'
@@ -193,7 +273,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage green',
       description: 'Green NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 16,
+      money: 0.214,
       categories: [
         {
           name: 'Equipment'
@@ -204,7 +289,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage grey',
       description: 'Grey NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 448,
+      scope3: 88,
+      energy: 3.6,
+      money: 0.214,
       categories: [
         {
           name: 'Equipment'
@@ -215,7 +305,12 @@ export const seedGauges = async () => {
       name: 'Equipment hours',
       description: '',
       unit: 'kWh',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Equipment'
@@ -226,7 +321,12 @@ export const seedGauges = async () => {
       name: 'Gasoline consumption',
       description: 'Petrol (liter)',
       unit: 'liter',
-      scope: 2176,
+      scope1: 2176,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 645,
+      energy: 31.4,
+      money: 1.91,
       categories: [
         {
           name: 'Equipment'
@@ -238,7 +338,12 @@ export const seedGauges = async () => {
       name: 'gross margin',
       description: 'Gross margin (million EUR)',
       unit: 'million EUR',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Finances'
@@ -249,7 +354,12 @@ export const seedGauges = async () => {
       name: 'Production value',
       description: 'Production (EUR)',
       unit: 'EUR',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Finances'
@@ -260,7 +370,12 @@ export const seedGauges = async () => {
       name: 'Revenue',
       description: 'Revenue (EUR)',
       unit: 'EUR',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Finances'
@@ -271,7 +386,12 @@ export const seedGauges = async () => {
       name: 'Revenue',
       description: 'Revenue (million EUR)',
       unit: 'million EUR',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Finances'
@@ -283,7 +403,12 @@ export const seedGauges = async () => {
       name: 'Diesel consumption',
       description: 'Diesel (liter)',
       unit: 'liter',
-      scope: 2468,
+      scope1: 2468,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 787,
+      energy: 36,
+      money: 1.79,
       categories: [
         {
           name: 'Fuels'
@@ -294,7 +419,12 @@ export const seedGauges = async () => {
       name: 'Gasoline consumption',
       description: 'Petrol (liter)',
       unit: 'liter',
-      scope: 2176,
+      scope1: 2176,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 645,
+      energy: 31.4,
+      money: 1.91,
       categories: [
         {
           name: 'Fuels'
@@ -306,7 +436,12 @@ export const seedGauges = async () => {
       name: 'Employees FTE',
       description: 'Employees headcount or FTE (number)',
       unit: 'number',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'HR'
@@ -317,7 +452,12 @@ export const seedGauges = async () => {
       name: 'Employees FTE',
       description: 'Full time employees (number)',
       unit: 'number',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'HR'
@@ -328,7 +468,12 @@ export const seedGauges = async () => {
       name: 'Working time',
       description: 'Working time (hours)',
       unit: 'hours',
-      scope: 0,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'HR'
@@ -340,7 +485,12 @@ export const seedGauges = async () => {
       name: 'Natural gas',
       description: 'Natural gas (gaseous) (m³)',
       unit: 'm³',
-      scope: 1779,
+      scope1: 1779,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 355,
+      energy: 31.65,
+      money: 2.03,
       categories: [
         {
           name: 'Heating'
@@ -362,7 +512,12 @@ export const seedGauges = async () => {
       name: 'Diesel consumption',
       description: 'Diesel (liter)',
       unit: 'liter',
-      scope: 2176,
+      scope1: 2468,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 787,
+      energy: 36,
+      money: 1.79,
       categories: [
         {
           name: 'Lease cars'
@@ -373,7 +528,12 @@ export const seedGauges = async () => {
       name: 'Distance travelled passenger transport',
       description: 'Distance (km)',
       unit: 'km',
-      scope: 1635,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Lease cars'
@@ -384,7 +544,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage green',
       description: 'Green NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 16,
+      money: 0.214,
       categories: [
         {
           name: 'Lease cars'
@@ -395,7 +560,12 @@ export const seedGauges = async () => {
       name: 'Electricity usage grey',
       description: 'Grey NL (kWh)',
       unit: 'kWh',
-      scope: 328,
+      scope1: 0,
+      scope2_location: 328,
+      scope2_market: 448,
+      scope3: 88,
+      energy: 3.6,
+      money: 0.214,
       categories: [
         {
           name: 'Lease cars'
@@ -406,7 +576,12 @@ export const seedGauges = async () => {
       name: 'Gasoline consumption',
       description: 'Petrol (liter)',
       unit: 'liter',
-      scope: 2176,
+      scope1: 2176,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 787,
+      energy: 36,
+      money: 1.79,
       categories: [
         {
           name: 'Lease cars'
@@ -417,7 +592,12 @@ export const seedGauges = async () => {
       name: 'LPG consumption',
       description: 'LPG (liter)',
       unit: 'liter',
-      scope: 1635,
+      scope1: 1635,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 0,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Lease cars'
@@ -429,7 +609,12 @@ export const seedGauges = async () => {
       name: 'Distance cars diesel',
       description: 'Medium (1050-1450 kg) (km)',
       unit: 'km',
-      scope: 180,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 180,
+      energy: 2.2,
+      money: 0,
       categories: [
         {
           name: 'Private vehicles business travel'
@@ -440,7 +625,12 @@ export const seedGauges = async () => {
       name: 'Distance cars electric grey (NL)',
       description: 'EV kilometers gray Netherlands (km)',
       unit: 'km',
-      scope: 109,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 109,
+      energy: 0,
+      money: 0,
       categories: [
         {
           name: 'Private vehicles business travel'
@@ -451,7 +641,12 @@ export const seedGauges = async () => {
       name: 'Distance cars gasoline',
       description: 'Medium (950 - 1350 kg) (km)',
       unit: 'km',
-      scope: 204,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 204,
+      energy: 3.1,
+      money: 0,
       categories: [
         {
           name: 'Private vehicles business travel'
@@ -462,7 +657,12 @@ export const seedGauges = async () => {
       name: 'Private cars declared kilometers',
       description: 'Fuel unknown (km)',
       unit: 'km',
-      scope: 193,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 193,
+      energy: 2.9,
+      money: 0.248,
       categories: [
         {
           name: 'Private vehicles business travel'
@@ -474,7 +674,12 @@ export const seedGauges = async () => {
       name: 'Distance travelled freight diesel',
       description: 'Freight (km)',
       unit: 'km',
-      scope: 180,
+      scope1: 0,
+      scope2_location: 0,
+      scope2_market: 0,
+      scope3: 180,
+      energy: 2.2,
+      money: 0,
       categories: [
         {
           name: 'Transport'
@@ -499,14 +704,22 @@ export const seedGauges = async () => {
     if (existingItem) {
       await gaugeRepository.save({
         ...existingItem,
-        scope: item.scope,
+        scope1: item.scope1,
+        scope2_location: item.scope2_location,
+        scope2_market: item.scope2_market,
+        scope3: item.scope3,
+        energy: item.energy,
+        money: item.money,
       });
     } else {
       const gauge = gaugeRepository.create({ 
         name: item.name,
         description: item.description,
         started_on: new Date(2025, 0, 1),
-        scope: item.scope,
+        scope1: item.scope1,
+        scope2_location: item.scope2_location,
+        scope2_market: item.scope2_market,
+        scope3: item.scope3,
         categories: categories,
         entities: [],
         unit: item.unit,

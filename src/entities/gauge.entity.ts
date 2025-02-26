@@ -31,7 +31,22 @@ export class Gauge {
   import_only!: boolean;
 
   @Column({ default: 0 })
-  scope!: number;
+  scope1!: number;
+
+  @Column({ default: 0 })
+  scope2_location!: number;
+
+  @Column({ default: 0 })
+  scope2_market!: number;
+
+  @Column({ default: 0 })
+  scope3!: number;
+
+  @Column({ default: 0 })
+  energy!: number;
+
+  @Column({ default: 0 })
+  money!: number;
   
   @OneToMany(() => GaugeValue, (gaugeValue) => gaugeValue.gauge_id)
   @JoinTable()
